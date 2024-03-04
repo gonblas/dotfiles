@@ -1,0 +1,10 @@
+configuration {
+    font: "JetBrainsMono Nerd Font 10";
+    show-icons: false;
+    drun-display-format: "{name}";
+    location: 0;
+    width: 100;
+}
+ 
+ 
+@theme "nord"
