@@ -1,0 +1,8 @@
+# Ignore everything
+/*
+!.gitignore
+
+# Except for the folders we want to track
+!share/
+!scripts/
+

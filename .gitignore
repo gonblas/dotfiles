@@ -1,0 +1,10 @@
+# Ignore everything
+/*
+
+# Except for .gitignore itself
+!.gitignore
+
+# Except for specific directories
+!.config/
+!.local/
+!wallpapers/
