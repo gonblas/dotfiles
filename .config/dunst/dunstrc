@@ -256,3 +256,15 @@ frame_color = "#d20f39"
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
+
+[spotify]
+	appname = Spotify
+	frame_color = "#1DB954"
+	timeout=2
+
+[discord]
+	appname = discord
+	frame_color = "#7289da"
+	timeout=5
+	new-icon = ~/.local/share/icons/FontAwesome/discord.png
+	format = "<b>%s</b>\n%b"
