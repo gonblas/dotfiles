@@ -1,4 +1,5 @@
 # Ignore everything
+
 /*
 !.gitignore
 
@@ -19,3 +20,4 @@
 !nvim
 !tmux
 !zathura
+!spicetify
