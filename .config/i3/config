@@ -16,7 +16,6 @@ set $mod Mod4
 # CUSTOM EXEC
 
 # Picom
-exec_always --no-startup-id picom
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # Polybar
