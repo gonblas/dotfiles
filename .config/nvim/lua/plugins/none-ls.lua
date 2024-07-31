@@ -7,6 +7,5 @@ return {
         null_ls.builtins.formatting.stylua,
       }
     })
-    vim.keymmap.set('n', '<leader>gf', vim.lsp.but.format, {})
   end
 }
