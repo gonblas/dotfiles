@@ -7,4 +7,5 @@
 # Except for specific directories
 !.config/
 !.local/
+!.zshrc
 !wallpapers/
