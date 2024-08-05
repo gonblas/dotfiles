@@ -1,2 +1,97 @@
-alias ll='ls -l'
 
+# List aliases
+alias ll='lsd -lh --group-dirs=first'
+alias la='lsd -a --group-dirs=first'
+alias l='lsd --group-dirs=first'
+alias lla='lsd -lha --group-dirs=first'
+alias ls='lsd --group-dirs=first'
+
+
+# Bat aliases
+alias cat='bat'
+
+
+
+# Git aliases
+alias gi='git init; git branch -m main'
+alias ga='git add'
+alias gr='git reset'
+alias gp='git push'
+alias gs='git status'
+alias gd='git diff'
+alias gco='git checkout'
+alias gcl='git clone'
+alias gp='git pull'
+alias gcm="git commit -m"
+
+
+# Wifi aliases
+alias wifi='nmcli --ask dev wifi connect'
+
+
+# Nvim aliases
+alias nv='nvim'
+alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
+
+
+# Pacman aliases
+alias p="sudo pacman -S"
+alias r="sudo pacman -Rns"
+
+
+# File aliases
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
+alias rmf="rm -rf"
+
+
+# Zsh aliases
+alias reload="source ~/.zshrc"
+
+
+# Extract anc Compress files
+extract() {
+  if [ -z "$1" ]; then
+    echo "Usage: extract <file>"
+    return 1
+  fi
+
+  case "$1" in
+    *.tar.bz2)  tar xvjf "$1" ;;
+    *.tar.gz)   tar xvzf "$1" ;;
+    *.tar.xz)   tar xvJf "$1" ;;
+    *.tar.Z)    tar xvZf "$1" ;;
+    *.tar)      tar xvf "$1" ;;
+    *.bz2)      bunzip2 "$1" ;;
+    *.rar)      unrar x "$1" ;;
+    *.gz)       gunzip "$1" ;;
+    *.zip)      unzip "$1" ;;
+    *.7z)       7z x "$1" ;;
+    *.xz)       unxz "$1" ;;
+    *.Z)        uncompress "$1" ;;
+    *)          echo "extract: cannot extract '$1'" ;;
+  esac
+}
+
+
+compress() {
+  if [ -z "$2" ]; then
+    echo "Usage: compress <file|directory> <archive_name>"
+    return 1
+  fi
+
+  case "$2" in
+    *.tar.bz2)  tar cvjf "$2" "$1" ;;
+    *.tar.gz)   tar cvzf "$2" "$1" ;;
+    *.tar.xz)   tar cvJf "$2" "$1" ;;
+    *.tar.Z)    tar cvZf "$2" "$1" ;;
+    *.tar)      tar cvf "$2" "$1" ;;
+    *.bz2)      bzip2 -zk "$1" ;;
+    *.gz)       gzip -k "$1" ;;
+    *.zip)      zip -r "$2" "$1" ;;
+    *.7z)       7z a "$2" "$1" ;;
+    *.xz)       xz -z "$1" ;;
+    *)          echo "compress: unsupported archive format '$2'" ;;
+  esac
+}

@@ -25,7 +25,7 @@ ensure_plugins() {
     "zsh-syntax-highlighting"
     "zsh-autosuggestions"
     "zsh-history-substring-search"
-    "you-should-use"
+    "zsh-you-should-use"
   )
 
   # Iterate over the plugins array and source the appropriate file if it exists
@@ -34,6 +34,12 @@ ensure_plugins() {
       source "$ZSH_PLUGINS_DIR/$plugin/${plugin}.zsh"
     elif [[ -f "$ZSH_PLUGINS_DIR/$plugin/${plugin}.plugin.zsh" ]]; then
       source "$ZSH_PLUGINS_DIR/$plugin/${plugin}.plugin.zsh"
+    else
+      # Attempt to source a file with 'zsh-' removed from the plugin name
+      alternative_file="${plugin#zsh-}.zsh"
+      if [[ -f "$ZSH_PLUGINS_DIR/$plugin/$alternative_file" ]]; then
+        source "$ZSH_PLUGINS_DIR/$plugin/$alternative_file"
+      fi
     fi
   done
 }
@@ -50,4 +56,10 @@ bindkey '^[[B' history-substring-search-down
 # prompt off
 eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+unsetopt PROMPT_SP
 
