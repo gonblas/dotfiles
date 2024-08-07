@@ -96,3 +96,10 @@ compress() {
     *)          echo "compress: unsupported archive format '$2'" ;;
   esac
 }
+
+
+
+show_sddm_theme() {
+    sddm-greeter --test-mode --theme /usr/share/sddm/themes/"$1"
+}
+
