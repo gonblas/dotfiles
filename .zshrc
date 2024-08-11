@@ -63,3 +63,19 @@ source <(fzf --zsh)
 
 unsetopt PROMPT_SP
 
+
+# Entr settings
+echo ~/.zshrc | entr -r source ~/.zshrc &
+
+
+
+# Colors for man pages
+
+export LESS_TERMCAP_mb=$'\e[01;31m'   # Red (Flamingo)
+export LESS_TERMCAP_md=$'\e[01;34m'   # Blue (Sapphire)
+export LESS_TERMCAP_me=$'\e[0m'        # Reset
+export LESS_TERMCAP_so=$'\e[01;33m'   # Yellow (Peach)
+export LESS_TERMCAP_se=$'\e[0m'        # Reset
+export LESS_TERMCAP_us=$'\e[04;36m'   # Cyan (Teal)
+export LESS_TERMCAP_ue=$'\e[0m'        # Reset
+

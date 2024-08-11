@@ -9,7 +9,12 @@ alias ls='lsd --group-dirs=first'
 
 # Bat aliases
 alias cat='bat'
-
+alias bathelp='bat --plain --language=help'
+help() {
+    "$@" --help 2>&1 | bathelp
+}
+alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 
 
 # Git aliases
@@ -32,6 +37,7 @@ alias wifi='nmcli --ask dev wifi connect'
 
 # Nvim aliases
 alias nv='nvim'
+sv='sudo nvim'
 alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 
 
