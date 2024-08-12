@@ -46,10 +46,14 @@ alias p="sudo pacman -S"
 alias r="sudo pacman -Rns"
 
 
+# Trash aliases
+alias rm='trash'
+
+
+
 # File aliases
 alias cp="cp -i"
 alias mv="mv -i"
-alias rm="rm -i"
 alias rmf="rm -rf"
 
 

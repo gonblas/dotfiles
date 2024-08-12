@@ -70,8 +70,13 @@ export FZF_DEFAULT_OPTS=" \
 
 
 
+# Btop
+export XDG_CONFIG_HOME="$HOME/.config"
+
+
 # Entr settings
-echo ~/.zshrc | entr -r source ~/.zshrc &
+# echo ~/.zshrc | entr -r source ~/.zshrc > /dev/null 2>&1
+
 
 
 
