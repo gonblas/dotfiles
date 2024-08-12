@@ -13,10 +13,6 @@ set $mod Mod4
 
 
 
-
-
-# CUSTOM EXEC
-
 # Picom
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
@@ -293,7 +289,7 @@ set $mantle #181825
 set $crust #11111b
 
 # target                 title     bg    text   indicator  border
-client.focused           $lavender $base $text  $rosewater  $catppuccin_border_active 
+client.focused           $lavender $base $text  $rosewater $catppuccin_border_active 
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
 client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
