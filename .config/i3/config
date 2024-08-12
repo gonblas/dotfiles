@@ -249,7 +249,7 @@ for_window [class="Thunar"] floating enable
 
 hide_edge_borders smart
 
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 2
 
 gaps inner 8
 gaps outer 0
@@ -260,7 +260,7 @@ smart_gaps on
 ### Window Extra config
 
 # Define color variables for Catppuccin:  
-set $catppuccin_border_active #cba6f7
+set $catppuccin_border_active #f5c2e7
 set $catppuccin_border_inactive #ffffff
 set $catppuccin_border_unfocused #cba6f7
 set $catppuccin_border_urgent #ff007c
@@ -293,7 +293,7 @@ set $mantle #181825
 set $crust #11111b
 
 # target                 title     bg    text   indicator  border
-client.focused           $lavender $base $text  $rosewater $lavender
+client.focused           $lavender $base $text  $rosewater  $catppuccin_border_active 
 client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
 client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
