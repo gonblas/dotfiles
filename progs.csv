@@ -102,7 +102,6 @@ p,zsh-autosuggestions
 p,zsh-completions
 p,zsh-history-substring-search
 p,zsh-syntax-highlighting
-p,zsh-you-should-use
 a,catppuccin-gtk-theme-mocha
 a,ctpv-git
 a,ctpv-git-debug
