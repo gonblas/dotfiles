@@ -15,7 +15,7 @@ mic_volume=$(pactl list sources | awk -v mic_source="$mic_source" '/^Source/ {in
 
 # Check the microphone status and set the output accordingly
 if [ "$mic_status" == "yes" ]; then
-   echo "󰍭"
+   echo -e "󰍭"
 else
-   echo "󰍬"
+   echo -e "󰍬"
 fi

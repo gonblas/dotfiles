@@ -1,110 +1,47 @@
-/bin/sh: line 1: dex: command not found
-/bin/sh: line 1: xss-lock: command not found
-/bin/sh: line 1: nm-applet: command not found
 polybar: no process found
+/bin/sh: line 1: nm-applet: command not found
+/bin/sh: line 1: xss-lock: command not found
+/bin/sh: line 1: dex: command not found
 polybar-msg: No active ipc channels
 
-(nitrogen:622478): GLib-GObject-CRITICAL **: 18:57:17.893: Attempting to freeze the notification queue for object GtkSettings[0x5664b0a5c160]; Property notification does not work during instance finalization.
+(nitrogen:610): GLib-GObject-CRITICAL **: 11:45:11.957: Attempting to freeze the notification queue for object GtkSettings[0x614d36176690]; Property notification does not work during instance finalization.
 
-(nitrogen:622478): GLib-GObject-CRITICAL **: 18:57:17.893: Attempting to thaw the notification queue for object GtkSettings[0x5664b0a5c160]; Property notification does not work during instance finalization.
+(nitrogen:610): GLib-GObject-CRITICAL **: 11:45:11.957: Attempting to thaw the notification queue for object GtkSettings[0x614d36176690]; Property notification does not work during instance finalization.
 
-(process:622537): GLib-CRITICAL **: 18:57:19.843: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
-BUG: single log message > 4k
-[ 08/06/2024 19:07:24.925 session_init FATAL ERROR ] Another composite manager is already running
-[ 08/06/2024 19:07:24.925 main FATAL ERROR ] Failed to create new session.
-There was an error while reading polybar's response: connection reset by peer (PID: 622491)
-[Parent 622566, Main Thread] WARNING: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
-
-** (firefox:622566): WARNING **: 19:08:41.389: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-
-[Parent 622566, Main Thread] WARNING: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
-
-** (firefox:622566): WARNING **: 21:55:57.116: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-
-
-(process:1663527): GLib-CRITICAL **: 09:43:11.770: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
-[Child 1630670, MediaDecoderStateMachine #1] WARNING: Decoder=7f1a5c6a3d00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /usr/src/debug/firefox/firefox-128.0.2/dom/media/MediaDecoderStateMachine.cpp:372
-[Child 1630670, MediaDecoderStateMachine #1] WARNING: Decoder=7f1a5c6a3d00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /usr/src/debug/firefox/firefox-128.0.2/dom/media/MediaDecoderStateMachineBase.cpp:167
-[Child 1630670, MediaDecoderStateMachine #1] WARNING: Decoder=7f1a5c70b000 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /usr/src/debug/firefox/firefox-128.0.2/dom/media/MediaDecoderStateMachine.cpp:372
-[Child 1630670, MediaDecoderStateMachine #1] WARNING: Decoder=7f1a5c70b000 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /usr/src/debug/firefox/firefox-128.0.2/dom/media/MediaDecoderStateMachineBase.cpp:167
-[Child 1630670, MediaDecoderStateMachine #1] WARNING: Decoder=7f1a5c70aa00 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /usr/src/debug/firefox/firefox-128.0.2/dom/media/MediaDecoderStateMachine.cpp:372
-[Child 1630670, MediaDecoderStateMachine #1] WARNING: Decoder=7f1a5c70aa00 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /usr/src/debug/firefox/firefox-128.0.2/dom/media/MediaDecoderStateMachineBase.cpp:167
-[Child 1630670, MediaDecoderStateMachine #1] WARNING: Decoder=7f1a5a333900 state=DECODING_METADATA Decode metadata failed, shutting down decoder: file /usr/src/debug/firefox/firefox-128.0.2/dom/media/MediaDecoderStateMachine.cpp:372
-[Child 1630670, MediaDecoderStateMachine #1] WARNING: Decoder=7f1a5a333900 Decode error: NS_ERROR_DOM_MEDIA_METADATA_ERR (0x806e0006) - static MP4Metadata::ResultAndByteBuffer mozilla::MP4Metadata::Metadata(ByteStream *): Cannot parse metadata: file /usr/src/debug/firefox/firefox-128.0.2/dom/media/MediaDecoderStateMachineBase.cpp:167
-[Parent 622566, Main Thread] WARNING: Could not init tracker3 search engine: The name is not activatable: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
-
-(firefox:622566): Gtk-WARNING **: 11:29:14.768: Could not init tracker3 search engine: The name is not activatable
-[Parent 622566, Main Thread] WARNING: Could not init tracker3 search engine: The name is not activatable: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
-
-(firefox:622566): Gtk-WARNING **: 11:29:15.115: Could not init tracker3 search engine: The name is not activatable
-[Parent 622566, Main Thread] WARNING: Could not init tracker3 search engine: The name is not activatable: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
-
-(firefox:622566): Gtk-WARNING **: 11:29:15.424: Could not init tracker3 search engine: The name is not activatable
-[Parent 622566, Main Thread] WARNING: Could not init tracker3 search engine: The name is not activatable: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
-
-(firefox:622566): Gtk-WARNING **: 11:29:15.770: Could not init tracker3 search engine: The name is not activatable
-[Parent 622566, Main Thread] WARNING: Could not init tracker3 search engine: The name is not activatable: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
-
-(firefox:622566): Gtk-WARNING **: 11:29:17.204: Could not init tracker3 search engine: The name is not activatable
-Could not get filename from config file.
-(load_map_setbgs) Could not get background stored info for nitrogen
-
-(nitrogen:1787364): GLib-GObject-CRITICAL **: 11:30:15.230: Attempting to freeze the notification queue for object GtkSettings[0x608afc0ea190]; Property notification does not work during instance finalization.
-
-(nitrogen:1787364): GLib-GObject-CRITICAL **: 11:30:15.230: Attempting to thaw the notification queue for object GtkSettings[0x608afc0ea190]; Property notification does not work during instance finalization.
-
-(nitrogen:1787364): GLib-GObject-CRITICAL **: 11:30:18.380: Attempting to freeze the notification queue for object GtkSettings[0x608afc0dee10]; Property notification does not work during instance finalization.
-
-(nitrogen:1787364): GLib-GObject-CRITICAL **: 11:30:18.380: Attempting to thaw the notification queue for object GtkSettings[0x608afc0dee10]; Property notification does not work during instance finalization.
-Could not get filename from config file.
-(load_map_setbgs) Could not get background stored info for nitrogen
-Could not get filename from config file.
-(load_map_setbgs) Could not get background stored info for nitrogen
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:36.557: Attempting to freeze the notification queue for object GtkSettings[0x559e5140e850]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:36.557: Attempting to thaw the notification queue for object GtkSettings[0x559e5140e850]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:36.869: Attempting to freeze the notification queue for object GtkSettings[0x559e513fab40]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:36.869: Attempting to thaw the notification queue for object GtkSettings[0x559e513fab40]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:43.872: Attempting to freeze the notification queue for object GtkSettings[0x559e5126af10]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:43.872: Attempting to thaw the notification queue for object GtkSettings[0x559e5126af10]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:44.254: Attempting to freeze the notification queue for object GtkSettings[0x559e513fc180]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:44.254: Attempting to thaw the notification queue for object GtkSettings[0x559e513fc180]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:44.711: Attempting to freeze the notification queue for object GtkSettings[0x559e513f89b0]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:44.711: Attempting to thaw the notification queue for object GtkSettings[0x559e513f89b0]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:44.858: Attempting to freeze the notification queue for object GtkSettings[0x559e51418030]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:44.858: Attempting to thaw the notification queue for object GtkSettings[0x559e51418030]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:47.456: Attempting to freeze the notification queue for object GtkSettings[0x559e5140bf70]; Property notification does not work during instance finalization.
-
-(nitrogen:1787698): GLib-GObject-CRITICAL **: 11:30:47.456: Attempting to thaw the notification queue for object GtkSettings[0x559e5140bf70]; Property notification does not work during instance finalization.
-Could not get filename from config file.
-(load_map_setbgs) Could not get background stored info for nitrogen
-
-(process:1919593): GLib-CRITICAL **: 13:23:34.795: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
+(process:728): GLib-CRITICAL **: 11:45:18.016: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
 ThunarThumbnailer: Failed to retrieve supported types: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-BUG: single log message > 4k
-[ 08/07/2024 13:44:26.669 session_init FATAL ERROR ] Another composite manager is already running
-[ 08/07/2024 13:44:26.669 main FATAL ERROR ] Failed to create new session.
-[Parent 622566, Main Thread] WARNING: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
 
-** (firefox:622566): WARNING **: 14:06:00.396: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+(process:945): GLib-CRITICAL **: 11:45:25.851: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
+[0.731] Ignoring unknown config key: shell_args
+[0.732] Ignoring unknown config key: padding_width
+[0.732] Ignoring unknown config key: padding_height
 
-[Parent 622566, Main Thread] WARNING: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-: 'glib warning', file /usr/src/debug/firefox/firefox-128.0.2/toolkit/xre/nsSigHandlers.cpp:187
+(process:13715): GLib-CRITICAL **: 11:55:00.023: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
+ThunarThumbnailer: Failed to retrieve supported types: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
 
-** (firefox:622566): WARNING **: 14:12:52.821: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+(process:18696): GLib-CRITICAL **: 11:58:58.616: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
+ThunarThumbnailer: Failed to retrieve supported types: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/cpu0/cache/index2/size
+[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/cpu0/cache/index3/size
+[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/present
+[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/possible
+[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/possible
+[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/cpu0/topology/core_cpus
+[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/cpu0/topology/thread_siblings
+[Parent 1004, Main Thread] WARNING: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+: 'glib warning', file /usr/src/debug/firefox/firefox-129.0.1/toolkit/xre/nsSigHandlers.cpp:187
 
+** (firefox:1004): WARNING **: 17:03:07.752: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+
+[Parent 1004, Main Thread] WARNING: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+: 'glib warning', file /usr/src/debug/firefox/firefox-129.0.1/toolkit/xre/nsSigHandlers.cpp:187
+
+** (firefox:1004): WARNING **: 17:03:30.213: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+
+/home/gblas/.config/rofi/powermenu/powermenu.sh: line 69: mpc: command not found
+/home/gblas/.config/rofi/powermenu/powermenu.sh: line 70: amixer: command not found
+Failed to restart sddm.service: Interactive authentication required.
+See system logs and 'systemctl status sddm.service' for details.
+[0.618] Ignoring unknown config key: shell_args
+[0.618] Ignoring unknown config key: padding_width
+[0.618] Ignoring unknown config key: padding_height

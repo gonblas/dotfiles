@@ -209,8 +209,8 @@
         },
         "ImageZoom": {
             "enabled": true,
-            "size": 100,
-            "zoom": 2.2,
+            "size": 458.0128205128205,
+            "zoom": 1,
             "nearestNeighbour": false,
             "square": false,
             "saveZoomValues": true,
@@ -584,6 +584,6 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1722174906002
+        "settingsSyncVersion": 1722270521443
     }
 }
