@@ -102,7 +102,7 @@ chsh -s /bin/zsh "$name" >/dev/null 2>&1
 sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
 
 #enable gdm service
-sudo systemctl enable sddm
-sudo systemctl start sddm
+sudo systemctl enable ly.service
+sudo systemctl start ly.service
 
 echo -e "DONE! Now reboot your computer"
