@@ -89,10 +89,5 @@ p,zsh-autosuggestions
 p,zsh-completions
 p,zsh-history-substring-search
 p,zsh-syntax-highlighting
+p,visual-studio-code-bin
 a,zsh-you-should-use
-a,ttf-all-the-icons
-a,ttf-cm-unicode
-a,visual-studio-code-bin
-a,visual-studio-code-bin-debug
-a,xorg-font-utils
-
