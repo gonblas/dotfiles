@@ -4,7 +4,7 @@
 
 ### VARIABLES ###
 
-aurhelper="yay"
+aurhelper="paru"
 script_dir=$(dirname $(readlink -f "$0"))
 
 ### FUNCTIONS ###

@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-
+exec --no-startup-id xcompmgr -c -C
 
 # Picom
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
@@ -296,5 +296,9 @@ client.unfocused         $overlay0 $base $text  $rosewater $overlay0
 client.urgent            $peach    $base $peach $overlay0  $peach
 client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
 client.background        $base
+
+
+# Redimensionar el diálogo "Guardar Imagen" de Firefox
+for_window [class="Firefox" title="Save Image"] floating enable, resize set 600 400
 
 

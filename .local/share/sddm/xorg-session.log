@@ -1,47 +1,18 @@
-polybar: no process found
+/bin/sh: line 1: dex: command not found
 /bin/sh: line 1: nm-applet: command not found
 /bin/sh: line 1: xss-lock: command not found
-/bin/sh: line 1: dex: command not found
+/bin/sh: line 1: picom: command not found
+polybar: no process found
 polybar-msg: No active ipc channels
 
-(nitrogen:610): GLib-GObject-CRITICAL **: 11:45:11.957: Attempting to freeze the notification queue for object GtkSettings[0x614d36176690]; Property notification does not work during instance finalization.
+(nitrogen:12396): GLib-GObject-CRITICAL **: 21:33:10.058: Attempting to freeze the notification queue for object GtkSettings[0x5bfc8a5b5230]; Property notification does not work during instance finalization.
 
-(nitrogen:610): GLib-GObject-CRITICAL **: 11:45:11.957: Attempting to thaw the notification queue for object GtkSettings[0x614d36176690]; Property notification does not work during instance finalization.
+(nitrogen:12396): GLib-GObject-CRITICAL **: 21:33:10.059: Attempting to thaw the notification queue for object GtkSettings[0x5bfc8a5b5230]; Property notification does not work during instance finalization.
 
-(process:728): GLib-CRITICAL **: 11:45:18.016: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
-ThunarThumbnailer: Failed to retrieve supported types: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-
-(process:945): GLib-CRITICAL **: 11:45:25.851: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
-[0.731] Ignoring unknown config key: shell_args
-[0.732] Ignoring unknown config key: padding_width
-[0.732] Ignoring unknown config key: padding_height
-
-(process:13715): GLib-CRITICAL **: 11:55:00.023: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
-ThunarThumbnailer: Failed to retrieve supported types: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-
-(process:18696): GLib-CRITICAL **: 11:58:58.616: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
-ThunarThumbnailer: Failed to retrieve supported types: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/cpu0/cache/index2/size
-[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/cpu0/cache/index3/size
-[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/present
-[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/possible
-[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/possible
-[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/cpu0/topology/core_cpus
-[66644] Sandbox: attempt to open unexpected file /sys/devices/system/cpu/cpu0/topology/thread_siblings
-[Parent 1004, Main Thread] WARNING: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-: 'glib warning', file /usr/src/debug/firefox/firefox-129.0.1/toolkit/xre/nsSigHandlers.cpp:187
-
-** (firefox:1004): WARNING **: 17:03:07.752: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-
-[Parent 1004, Main Thread] WARNING: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-: 'glib warning', file /usr/src/debug/firefox/firefox-129.0.1/toolkit/xre/nsSigHandlers.cpp:187
-
-** (firefox:1004): WARNING **: 17:03:30.213: Failed to enumerate devices of org.freedesktop.UPower: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
-
-/home/gblas/.config/rofi/powermenu/powermenu.sh: line 69: mpc: command not found
-/home/gblas/.config/rofi/powermenu/powermenu.sh: line 70: amixer: command not found
-Failed to restart sddm.service: Interactive authentication required.
-See system logs and 'systemctl status sddm.service' for details.
-[0.618] Ignoring unknown config key: shell_args
-[0.618] Ignoring unknown config key: padding_width
-[0.618] Ignoring unknown config key: padding_height
+(process:12466): GLib-CRITICAL **: 21:33:13.227: g_string_insert_len: assertion 'len == 0 || val != NULL' failed
+[0.110] Ignoring unknown config key: shell_args
+[0.110] Ignoring unknown config key: padding_width
+[0.110] Ignoring unknown config key: padding_height
+[0.320] Failed to enable transparency. This happens when your desktop environment does not support compositing.
+[0.401] [glfw error 65544]: process_desktop_settings: failed with error: [org.freedesktop.DBus.Error.ServiceUnknown] The name is not activatable
+Closing SHM log "/i3-log-12379"

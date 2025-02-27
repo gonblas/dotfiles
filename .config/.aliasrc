@@ -28,7 +28,8 @@ alias gd='git diff'
 alias gco='git checkout'
 alias gcl='git clone'
 alias gp='git pull'
-alias gcm="git commit -m"
+alias gcm='git commit -m'
+alias glog='git log --oneline'
 
 
 # Wifi aliases
@@ -113,3 +114,21 @@ show_sddm_theme() {
     sddm-greeter --test-mode --theme /usr/share/sddm/themes/"$1"
 }
 
+alias psql=psql_wrapper
+
+psql_wrapper() {
+    local args=("$@") username="" override=1
+    while [[ $# -gt 0 ]]; do
+        if [[ $1 == "-h" ]]; then
+            username=$(grep $2 ~/.pgpass | head -n 1 | cut -d : -f 4)
+        elif [[ $1 == "-U" ]]; then
+            override=""
+        fi
+        shift
+    done
+    if [[ $username && $override ]]; then
+        echo "-U" "$username"
+        args+=("-U" "$username")
+    fi
+    \psql "${args[@]}"
+}

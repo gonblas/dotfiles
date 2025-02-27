@@ -4,7 +4,7 @@ ZDOTDIR=$HOME/.zsh
 
 # Default programs
 export EDITOR="nvim"
-export TERMINAL="alacritty"
+export TERMINAL="kitty"
 export BROWSER="firefox"
 export READER="zathura"
 export VIDEO_PLAYER="vlc"
@@ -90,3 +90,5 @@ export LESS_TERMCAP_se=$'\e[0m'        # Reset
 export LESS_TERMCAP_us=$'\e[04;36m'   # Cyan (Teal)
 export LESS_TERMCAP_ue=$'\e[0m'        # Reset
 
+
+export PATH=$PATH:/home/gblas/.spicetify
