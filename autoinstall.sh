@@ -104,5 +104,7 @@ sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
 #enable gdm service
 sudo systemctl enable ly.service
 sudo systemctl start ly.service
+sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
+timedatectl set-timezone America/Argentina/Buenos_Aires
 
 echo -e "DONE! Now reboot your computer"

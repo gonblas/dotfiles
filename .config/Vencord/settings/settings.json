@@ -195,9 +195,6 @@
         "GreetStickerPicker": {
             "enabled": false
         },
-        "HideAttachments": {
-            "enabled": false
-        },
         "iLoveSpam": {
             "enabled": false
         },
@@ -572,6 +569,9 @@
         },
         "YoutubeAdblock": {
             "enabled": false
+        },
+        "HideMedia": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -584,6 +584,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1733099160807
-    }
+        "settingsSyncVersion": 1740778357033
+    },
+    "eagerPatches": false
 }
