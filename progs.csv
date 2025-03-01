@@ -2,14 +2,12 @@
 p,picom
 p,ly
 p,alacritty
-p,amd-ucode
 p,base
 p,base-devel
 p,bat
 p,brightnessctl
 p,btop
 p,btrfs-progs
-p,cronie
 p,discord
 p,dnsmasq
 p,dunst
@@ -27,9 +25,6 @@ p,grub
 p,gst-plugin-pipewire
 p,gtk-engine-murrine
 p,i3-wm
-p,i3blocks
-p,i3lock
-p,i3status
 p,inetutils
 p,jq
 p,kitty
@@ -39,7 +34,6 @@ p,libsixel
 p,linux
 p,linux-firmware
 p,lsd
-p,lxappearance
 p,maim
 p,man-db
 p,neovim
@@ -92,3 +86,4 @@ p,zsh-history-substring-search
 p,zsh-syntax-highlighting
 p,visual-studio-code-bin
 a,zsh-you-should-use
+a,betterlockscreen
