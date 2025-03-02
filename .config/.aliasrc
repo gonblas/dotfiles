@@ -86,6 +86,8 @@ extract() {
   esac
 }
 
+alias logout="loginctl kill-session $(loginctl | grep $USER | awk '{print $1}')"
+
 
 compress() {
   if [ -z "$2" ]; then

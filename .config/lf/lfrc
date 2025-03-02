@@ -138,7 +138,7 @@ map gc cd ~/.config
 map gD cd ~/Documents
 map gd cd ~/Downloads
 map gw cd ~/wallpapers
-map gr cd ~/repos
+map gr cd ~/Developer
 map gv cd ~/videos
 map gs cd ~/.local/bin
 map gt cd ~/.local/share/Trash/files
