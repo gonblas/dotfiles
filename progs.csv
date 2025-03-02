@@ -1,5 +1,6 @@
 #TAG,NAME IN REPO (or git url)
 p,picom
+p,xclip
 p,ly
 p,alacritty
 p,base
