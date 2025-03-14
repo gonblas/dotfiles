@@ -29,6 +29,7 @@ exec_always --no-startup-id setxkbmap -layout latam
 # Rofi
 bindsym $mod+space exec --no-startup-id ~/.config/rofi/launchers/launcher.sh
 bindsym $mod+q exec --no-startup-id ~/.config/rofi/powermenu/powermenu.sh
+bindsym $mod+Shift+w exec --no-startup-id ~/.config/rofi/applets/bin/wifi-menu.sh
 
 
 # Font for window titles. Will also be used by the bar unless a different font

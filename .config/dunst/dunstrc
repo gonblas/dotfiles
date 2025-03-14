@@ -108,25 +108,22 @@
     #
 
 [global]
-background = "#1A1826"
-frame_color = "#bd93f9"
+frame_color = "#89b4fa"
 separator_color= frame
-timeout = 5
+highlight = "#89b4fa"
 
 [urgency_low]
-background = "#1A1826"
+background = "#1e1e2e"
 foreground = "#cdd6f4"
-frame_color = "#40a02b"
 
 [urgency_normal]
-background = "#1A1826"
+background = "#1e1e2e"
 foreground = "#cdd6f4"
-frame_color = "#8839ef"
 
 [urgency_critical]
-background = "#1A1826"
+background = "#1e1e2e"
 foreground = "#cdd6f4"
-frame_color = "#d20f39"
+frame_color = "#fab387"
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

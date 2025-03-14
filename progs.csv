@@ -1,4 +1,6 @@
 #TAG,NAME IN REPO (or git url)
+p,bluez
+p,bluez-utils
 p,picom
 p,xclip
 p,ly
