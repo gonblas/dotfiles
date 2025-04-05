@@ -1,4 +1,6 @@
 #TAG,NAME IN REPO (or git url)
+p,cronie
+p,acpi
 p,bluez
 p,bluez-utils
 p,picom

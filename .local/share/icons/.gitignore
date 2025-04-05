@@ -4,4 +4,5 @@
 
 # Except for the folders we want to track
 !FontAwesome
+!dunst
 !FontAwesomeNerdFont-Regular.ttf

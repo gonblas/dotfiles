@@ -51,7 +51,7 @@
     icon_position = left
     min_icon_size = 0
     max_icon_size = 32
-    icon_path = "$HOME/.local/share/icons/FontAwesome""
+    icon_path = "$HOME/.local/share/icons/dunst"
 
     ### History ###
     sticky_history = yes
