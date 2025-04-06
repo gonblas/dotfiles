@@ -198,7 +198,7 @@ Anyone can use, modify, and adapt these dotfiles as needed. If you decide to use
 
 ---
 
-#### ⏻ i3 Session
+#### 勒 i3 Session
 
 | Shortcut               | Action                                |
 | ---------------------- | ------------------------------------- |
