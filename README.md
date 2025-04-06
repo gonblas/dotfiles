@@ -99,3 +99,109 @@ Anyone can use, modify, and adapt these dotfiles as needed. If you decide to use
 
 <p></details>
 
+
+## Keybinds
+
+#### 🖥️ Window Management
+
+| Shortcut                   | Action                                         |
+| -------------------------- | ---------------------------------------------- |
+| `$mod` + `Enter`           | Open default terminal                          |
+| `$mod` + `w`               | Close focused window                           |
+| `$mod` + `f`               | Toggle fullscreen mode                         |
+| `$mod` + `Shift` + `Space` | Toggle floating/tiled mode                     |
+| `$mod` + `e`               | Toggle split orientation (horizontal/vertical) |
+| `$mod` + `a`               | Focus parent container                         |
+
+---
+
+#### 🕹️ Focus Navigation
+
+| Shortcut                 | Action                          |
+| ------------------------ | ------------------------------- |
+| `$mod` + `h`/`j`/`k`/`l` | Move focus (left/down/up/right) |
+| `$mod` + `←`/`↓`/`↑`/`→` | Alternative using arrow keys    |
+
+---
+
+#### 🔃 Move Windows
+
+| Shortcut                           | Action                           |
+| ---------------------------------- | -------------------------------- |
+| `$mod` + `Shift` + `h`/`j`/`k`/`l` | Move window (left/down/up/right) |
+| `$mod` + `Shift` + `←`/`↓`/`↑`/`→` | Alternative using arrow keys     |
+
+---
+
+#### 🪟 Splits
+
+| Shortcut             | Action             |
+| -------------------- | ------------------ |
+| `$mod` + `Alt` + `h` | Split horizontally |
+| `$mod` + `Alt` + `v` | Split vertically   |
+
+---
+
+#### 🖱️ Mouse
+
+| Shortcut            | Action                                  |
+| ------------------- | --------------------------------------- |
+| `Mouse` + `$mod`    | Move/resize floating windows with mouse |
+| `Titlebar` + `$mod` | Move tiled windows with mouse           |
+
+---
+
+#### ↔️ Resize Mode
+
+| Shortcut (in resize mode)        | Action                        |
+| -------------------------------- | ----------------------------- |
+| `$mod` + `r`                     | Enter resize mode             |
+| `h`/`j`/`k`/`l`                  | Shrink/expand width or height |
+| `←`/`↓`/`↑`/`→`                  | Alternative using arrow keys  |
+| `Enter` or `Esc` or `$mod` + `r` | Exit resize mode              |
+
+---
+
+#### ⚙️ Workspaces
+
+| Shortcut                       | Action                                  |
+| ------------------------------ | --------------------------------------- |
+| `$mod` + `1` ... `8`           | Switch to workspace 1 to 8              |
+| `$mod` + `Shift` + `1` ... `8` | Move focused window to workspace 1 to 8 |
+| `$mod` + `x` `z`               | Go to next/previous workspace           |
+| `$mod` + `Shift` + `x`/`z`     | Move window to next/previous workspace  |
+| `$mod` + `Tab`                 | Switch to previously used workspace     |
+
+---
+
+#### 🔊 Audio and Microphone
+
+| Shortcut               | Action                 |
+| ---------------------- | ---------------------- |
+| `XF86AudioRaiseVolume` | Increase volume by 10% |
+| `XF86AudioLowerVolume` | Decrease volume by 10% |
+| `XF86AudioMute`        | Mute/unmute speakers   |
+| `XF86AudioMicMute`     | Mute/unmute microphone |
+| `F9`                   | Mute/unmute microphone |
+
+---
+
+#### 🛠️ Utilities
+
+| Shortcut               | Action                            |
+| ---------------------- | --------------------------------- |
+| `$mod` + `Space`       | Open launcher (rofi)              |
+| `$mod` + `q`           | Power menu (rofi powermenu)       |
+| `$mod` + `Shift` + `w` | Wi-Fi menu (rofi wifi-menu)       |
+| `F10`                  | Take screenshot                   |
+| `$mod` + `Shift` + `p` | Open volume control (pavucontrol) |
+
+---
+
+#### ⏻ i3 Session
+
+| Shortcut               | Action                                |
+| ---------------------- | ------------------------------------- |
+| `$mod` + `Shift` + `c` | Reload i3 configuration               |
+| `$mod` + `Shift` + `r` | Restart i3 (keep windows open)        |
+| `$mod` + `Shift` + `e` | Exit i3 with confirmation (i3-nagbar) |
