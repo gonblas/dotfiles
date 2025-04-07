@@ -138,4 +138,8 @@ sudo systemctl start ly.service
 echo -e "${GREEN}##### Setting timezone #####${NC}"
 timedatectl set-timezone America/Argentina/Buenos_Aires
 
+echo -e "${GREEN}##### Setting Cronie #####${NC}"
+sudo systemctl enable cronie.service --now
+crontab ~/.config/crontab/cronfile
+
 echo -e "${GREEN}DONE! Now reboot your computer${NC}"

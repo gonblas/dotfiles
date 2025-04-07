@@ -1,0 +1,22 @@
+#!/bin/sh
+
+export XAUTHORITY=~/.Xauthority
+export DISPLAY=:0
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+
+LOW_BATTERY_THRESHOLD=25
+CRITICAL_BATTERY_THRESHOLD=10
+
+BATTERY_INFO=$(acpi -b)
+BATTERY_STATE=$(echo "$BATTERY_INFO" | grep -oP 'Charging|Discharging|Full')
+BATTERY_LEVEL=$(echo "$BATTERY_INFO" | grep -oP '[0-9]+(?=%)')
+
+if [ "$BATTERY_STATE" = "Discharging" ]; then
+    if [ "$BATTERY_LEVEL" -lt "$CRITICAL_BATTERY_THRESHOLD" ]; then
+        notify-send "Critical battery" "$BATTERY_LEVEL% of battery." -u critical -i "battery-alert" -t 5000 -r 9991
+    elif [ "$BATTERY_LEVEL" -le "$LOW_BATTERY_THRESHOLD" ]; then
+        notify-send "Low battery" "$BATTERY_LEVEL% of battery." -u critical -i "battery-low" -t 5000 -r 9991
+    fi
+elif [ "$BATTERY_STATE" = "Full" ]; then
+    notify-send "Battery full" "$BATTERY_LEVEL% of battery." -u normal -i "battery-full" -t 5000 -r 9991
+fi
