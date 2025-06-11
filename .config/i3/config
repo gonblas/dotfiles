@@ -140,7 +140,7 @@ bindsym $mod+f fullscreen toggle
 # change container layout (stacked, tabbed, toggle split)
 # bindsym $mod+s layout stacking
 #bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+e exec nautilus
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -236,13 +236,14 @@ bindsym $mod+Shift+p exec --no-startup-id pavucontrol
 # Floating windows
 
 for_window [class="pavucontrol"] floating enable
-for_window [class="Thunar"] floating enable
+for_window [class="org.gnome.Nautilus"] floating enable
 
 
 
 hide_edge_borders smart
 
 for_window [class=".*"] border pixel 2
+for_window [class="org.gnome.Nautilus"] border none
 
 gaps inner 8
 gaps outer 0
@@ -296,5 +297,6 @@ client.background        $base
 
 # Redimensionar el diálogo "Guardar Imagen" de Firefox
 for_window [class="Firefox" title="Save Image"] floating enable, resize set 600 400
+
 
 

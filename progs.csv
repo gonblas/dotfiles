@@ -1,4 +1,5 @@
 #TAG,NAME IN REPO (or git url)
+p,nautilus
 p,cronie
 p,acpi
 p,bluez
@@ -63,7 +64,6 @@ p,rofi
 p,starship
 p,spotify-launcher
 p,stow
-p,thunar
 p,tmux
 p,trash-cli
 p,tree
