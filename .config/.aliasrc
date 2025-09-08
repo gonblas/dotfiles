@@ -34,7 +34,7 @@ alias glog='git log --oneline'
 
 # Wifi aliases
 alias wifi='nmcli --ask dev wifi connect'
-
+alias wifi-list='nmcli device wifi list'
 
 # Nvim aliases
 alias nv='nvim'
