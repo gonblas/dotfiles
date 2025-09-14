@@ -135,6 +135,10 @@ echo -e "${GREEN}##### Enabling ly.service #####${NC}"
 sudo systemctl enable ly.service
 sudo systemctl start ly.service
 
+echo -e "${GREEN}##### Enabling brightness in polybar${NC}"
+sudo chown $USER:video /sys/class/backlight/intel_backlight/brightness
+
+
 echo -e "${GREEN}##### Setting timezone #####${NC}"
 timedatectl set-timezone America/Argentina/Buenos_Aires
 

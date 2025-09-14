@@ -1,4 +1,5 @@
 #TAG,NAME IN REPO (or git url)
+p,brightnessctl
 p,nautilus
 p,cronie
 p,acpi
