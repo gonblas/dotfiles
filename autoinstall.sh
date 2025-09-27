@@ -108,7 +108,7 @@ for x in sudo zsh base-devel ca-certificates python python-pip; do
   installpkg "$x"
 done
 
-[ -f /etc/sudoers.pacnew ] && cp /etc/sudoers.pacnew /etc/sudoers 
+
 
 trap 'rm -f /etc/sudoers.d/larbs-temp' HUP INT QUIT TERM PWR EXIT 
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >/etc/sudoers.d/larbs-temp  
