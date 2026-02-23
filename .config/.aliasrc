@@ -134,3 +134,7 @@ psql_wrapper() {
     fi
     \psql "${args[@]}"
 }
+
+copy-to-clipboard() {
+  "$@" | xclip -selection clipboard
+}
