@@ -27,6 +27,9 @@ HISTFILE=~/.zsh_history
 ensure_plugins() {
   typeset -a plugins
   plugins=(
+    "zsh-completions"
+    "zsh-syntax-highlighting"
+    "zsh-autosuggestions"
     "zsh-autocomplete"
     "zsh-history-substring-search"
     "zsh-you-should-use"
@@ -50,6 +53,11 @@ ensure_plugins() {
 }
 
 ensure_plugins
+
+# Initialize autocompletion system and load zsh-completions
+fpath=(/usr/share/zsh/plugins/zsh-completions/src $fpath)
+autoload -Uz compinit
+compinit
 
 
 # Hystory substring search options
