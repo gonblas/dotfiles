@@ -10,6 +10,8 @@ export BROWSER="firefox"
 export READER="zathura"
 export VIDEO_PLAYER="vlc"
 
+bindkey -e
+
 export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
 
@@ -33,7 +35,6 @@ ensure_plugins() {
     "zsh-autocomplete"
     "zsh-history-substring-search"
     "zsh-you-should-use"
-    "alias-tips"
   )
 
   # Iterate over the plugins array and source the appropriate file if it exists

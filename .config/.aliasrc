@@ -1,3 +1,7 @@
+# Navigation aliases
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
 # List aliases
 alias ll='lsd -lh --group-dirs=first'
@@ -13,8 +17,6 @@ alias bathelp='bat --plain --language=help'
 help() {
     "$@" --help 2>&1 | bathelp
 }
-#alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
-#alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 
 
 # Git aliases
@@ -45,24 +47,35 @@ alias inv='nvim $(fzf -m --preview="bat --color=always {}")'
 # Pacman aliases
 alias p="sudo pacman -S"
 alias r="sudo pacman -Rns"
+alias update='sudo pacman -Syu'
+alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+alias cleancache='sudo pacman -Sc'
 
 
 # Trash aliases
 alias rm='trash'
 
+# Path variables
+alias path='echo -e ${PATH//:/\\n}'
 
+# Human-readable command aliases
+alias df='df -h'
+alias free='free -m'
+alias grep='grep --color=auto'
 
 # File aliases
 alias cp="cp -i"
 alias mv="mv -i"
 alias rmf="rm -rf"
+alias mkdir='mkdir -pv'
 
+# Networking aliases
+alias ports='sudo lsof -i -P -n | grep LISTEN'
 
 # Zsh aliases
-alias reload="source ~/.zshrc"
+alias reload="exec zsh"
 
-
-# Extract anc Compress files
+# Extract and Compress files
 extract() {
   if [ -z "$1" ]; then
     echo "Usage: extract <file>"
@@ -138,3 +151,44 @@ psql_wrapper() {
 copy-to-clipboard() {
   "$@" | xclip -selection clipboard
 }
+
+
+# Add sudo pressing Esc twice
+sudo-command-line() {
+    [[ -z $BUFFER ]] && zle up-history
+    if [[ $BUFFER == sudo\ * ]]; then
+        LBUFFER="${LBUFFER#sudo }"
+    elif [[ $BUFFER == $EDITOR\ * ]]; then
+        LBUFFER="${LBUFFER#$EDITOR }"
+        LBUFFER="sudoedit $LBUFFER"
+    elif [[ $BUFFER == sudoedit\ * ]]; then
+        LBUFFER="${LBUFFER#sudoedit }"
+        LBUFFER="$EDITOR $LBUFFER"
+    else
+        LBUFFER="sudo $LBUFFER"
+    fi
+}
+zle -N sudo-command-line
+bindkey "\e\e" sudo-command-line
+
+
+# Enter and exit of background process with Ctrl+Z
+# Entrar y salir de procesos en segundo plano con Ctrl+Z
+fancy-ctrl-z () {
+  # Comprueba si la línea está vacía ignorando espacios en blanco
+  if [[ -z "${BUFFER// /}" ]]; then
+    BUFFER="fg"
+    zle accept-line
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+
+# Forzamos el atajo en todos los modos de teclado posibles
+bindkey '^Z' fancy-ctrl-z
+bindkey -M emacs '^Z' fancy-ctrl-z 2>/dev/null
+bindkey -M vicmd '^Z' fancy-ctrl-z 2>/dev/null
+bindkey -M viins '^Z' fancy-ctrl-z 2>/dev/null
+
