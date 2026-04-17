@@ -3,6 +3,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+
 # List aliases
 alias ll='lsd -lh --group-dirs=first'
 alias la='lsd -a --group-dirs=first'
@@ -38,6 +39,7 @@ alias glog='git log --oneline'
 alias wifi='nmcli --ask dev wifi connect'
 alias wifi-list='nmcli device wifi list'
 
+
 # Nvim aliases
 alias nv='nvim'
 sv='sudo nvim'
@@ -55,25 +57,33 @@ alias cleancache='sudo pacman -Sc'
 # Trash aliases
 alias rm='trash'
 
+
 # Path variables
 alias path='echo -e ${PATH//:/\\n}'
+
 
 # Human-readable command aliases
 alias df='df -h'
 alias free='free -m'
 alias grep='grep --color=auto'
 
+
 # File aliases
 alias cp="cp -i"
 alias mv="mv -i"
 alias rmf="rm -rf"
 alias mkdir='mkdir -pv'
+alias grep='rg'
+alias find='fd'
+
 
 # Networking aliases
 alias ports='sudo lsof -i -P -n | grep LISTEN'
 
+
 # Zsh aliases
 alias reload="exec zsh"
+
 
 # Extract and Compress files
 extract() {

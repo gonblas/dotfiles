@@ -9,6 +9,7 @@ export TERMINAL="kitty"
 export BROWSER="firefox"
 export READER="zathura"
 export VIDEO_PLAYER="vlc"
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 
 bindkey -e
 
@@ -110,3 +111,6 @@ export PATH=$PATH:/home/gblas/.spicetify
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$HOME/.npm-global/bin:$PATH"
+
+# OpenClaw Completion
+source "/home/gblas/.openclaw/completions/openclaw.zsh"

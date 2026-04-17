@@ -1,4 +1,7 @@
 #TAG,NAME IN REPO (or git url)
+p,ripgrep
+p,fd
+p,zsh-completions
 p,xclip
 p,brightnessctl
 p,nautilus
