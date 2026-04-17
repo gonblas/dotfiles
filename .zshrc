@@ -27,10 +27,10 @@ HISTFILE=~/.zsh_history
 ensure_plugins() {
   typeset -a plugins
   plugins=(
-    "zsh-syntax-highlighting"
-    "zsh-autosuggestions"
+    "zsh-autocomplete"
     "zsh-history-substring-search"
     "zsh-you-should-use"
+    "alias-tips"
   )
 
   # Iterate over the plugins array and source the appropriate file if it exists
@@ -60,7 +60,7 @@ bindkey '^[[B' history-substring-search-down
 # Disable the default prompt and load Starship and Zoxide
 # prompt off
 eval "$(starship init zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init zsh --cmd cd)"
 
 
 # Set up fzf key bindings and fuzzy completion
@@ -100,3 +100,4 @@ export PATH=$PATH:/home/gblas/.spicetify
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$HOME/.npm-global/bin:$PATH"
