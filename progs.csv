@@ -1,4 +1,4 @@
-#TAG,NAME IN REPO (or git url)
+TAG,NAME IN REPO (or git url)
 p,ripgrep
 p,fd
 p,zsh-completions
@@ -98,3 +98,4 @@ a,visual-studio-code-bin
 a,zsh-you-should-use
 a,betterlockscreen
 a,catppuccin-gtk-theme
+a,spicetify-cli

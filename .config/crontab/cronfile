@@ -1,0 +1,3 @@
+*/5 * * * * ~/.local/bin/battery-notify
+@weekly /bin/bash /home/gblas/.openclaw/workspace/scripts/cron_sync_calendar.sh
+@daily spicetify update; spicetify restore backup apply
