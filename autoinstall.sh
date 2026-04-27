@@ -125,6 +125,9 @@ python "$script_dir"/.local/bin/package_installer.py --username "$name" --aurhel
 echo -e "${GREEN}##### Installing Vencord #####${NC}"
 sudo -u "$name" sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"
 
+echo -e "${GREEN}##### Installing Spicetify Marketplace #####${NC}"
+curl -fsSL https://raw.githubusercontent.com/spicetify/marketplace/main/resources/install.sh | sh
+
 cd "$script_dir"
 stow --adopt .
 
