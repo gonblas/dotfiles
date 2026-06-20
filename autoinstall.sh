@@ -135,8 +135,8 @@ chsh -s /bin/zsh "$name" >/dev/null 2>&1
 sudo -u "$name" mkdir -p "/home/$name/.cache/zsh/"
 
 echo -e "${GREEN}##### Enabling ly.service #####${NC}"
-sudo systemctl enable ly.service
-sudo systemctl start ly.service
+sudo systemctl enable ly@tty2.service
+sudo systemctl start ly@tty2.service
 
 echo -e "${GREEN}##### Enabling brightness in polybar${NC}"
 sudo chown $USER:video /sys/class/backlight/intel_backlight/brightness
