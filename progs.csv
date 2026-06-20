@@ -1,4 +1,6 @@
 TAG,NAME IN REPO (or git url)
+p,xorg-server
+p,xorg-xauth
 p,ripgrep
 p,fd
 p,zsh-completions

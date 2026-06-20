@@ -112,5 +112,3 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$HOME/.npm-global/bin:$PATH"
 
-# OpenClaw Completion
-source "/home/gblas/.openclaw/completions/openclaw.zsh"
