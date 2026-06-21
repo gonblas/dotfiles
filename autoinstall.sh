@@ -116,6 +116,7 @@ echo "%wheel ALL=(ALL) NOPASSWD: ALL" >/etc/sudoers.d/larbs-temp
 echo -e "${GREEN}##### Installing AUR Helper #####${NC}"
 sudo chmod -R 777 "$repodir"
 install_aur "${aurhelper}" || error "Failed to install AUR helper"
+sudo chown -R $USER:$USER ~/.local
 
 progsfile="$script_dir/progs.csv"
 [[ -f "$progsfile" ]] || error "Program file doesn't exist"
